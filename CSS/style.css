@@ -1,0 +1,298 @@
+/* ------------ Id´s ------------ */
+#body
+{
+    overflow-y: hidden;
+}
+
+/* ------ Cabecalho ------ */
+#cabecalho
+{
+    height: 1080px;
+
+    border: none;
+    outline: none;
+
+    background-color: #222f3e;
+}
+
+#titulo_cabecalho
+{
+    color: #1dd1a1;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#titulo_2_cabecalho
+{
+    color: #1dd1a1;
+
+    font-family: 'Conv_BRI293', sans-serif;
+    font-weight: bold;
+}
+
+/* ------------ ItsNotMorpheus ------------ */
+/* Container */
+#ItsNotMorpheus
+{
+    /* border: 1px solid red; */
+
+    padding-top: 78.2px;
+
+    height: 400px;
+}
+
+#ItsNotMorpheus_Titulo
+{
+    /* border: 1px solid blue; */
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    text-align: center;
+}
+
+#ItsNotMorpheus_Text
+{
+    /* border: 1px solid red; */
+
+    padding-top: 14px;
+
+    text-align: center;
+    font-family: 'Conv_BRI293', sans-serif;
+
+    float: left;
+}
+
+#ItsNotMopheus_Image
+{
+    /* border: 1px solid black; */
+
+    margin-top: 13.2px;
+
+    float: left;
+}
+
+/* ------------ Skills ------------ */
+#Skills
+{
+    /* border: 1px solid red; */
+
+    padding-top: 78.2px;
+
+    height: 400px;
+}
+
+#Skills_Titulo
+{
+    /* border: 1px solid green; */
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    text-align: center;
+
+    font-size: 3em;
+}
+
+/* ------------ Classes ------------ */
+.Image
+{
+    height: 90px;
+    width:  calc(100% - 1022px); /* 86px; */
+    margin-bottom: 10px;
+}
+
+.Image_Left
+{
+    margin: 0px 10px 10px calc(100% - 640px);
+}
+
+
+/* --------- Media Querys --------- */
+/* Extra Small  (Portrait Phones)*/
+@media screen and (max-width: 576px)
+{
+    #cabecalho
+    {
+        padding-top: 40px;
+    }
+
+    #titulo_cabecalho
+    {
+        font-size: 2.5em;
+
+        text-align: center;
+    }
+
+    #titulo_2_cabecalho
+    {
+
+        text-align: center;
+    }
+
+    #ItsNotMorpheus_Text
+    {
+        font-size: 1.5em;
+        margin: auto;
+        width: 75%;
+    }
+
+    #ItsNotMopheus_Image
+    {
+        margin-top: 23.2px;
+
+        height: 90px;
+        width:  86px;
+    }
+}
+
+@media screen and (min-width: 577px)
+{
+    #cabecalho
+    {
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+
+    #titulo_cabecalho
+    {
+        font-size: 2.5em;
+
+        text-align: center;
+    }
+
+    #titulo_2_cabecalho
+    {
+
+        text-align: center;
+    }
+
+    #ItsNotMorpheus_Titulo
+    {
+        font-size: 2em;
+    }
+
+    #ItsNotMorpheus_Text
+    {
+        font-size: 1.5em;
+        margin-left: 67.81px;
+    }
+
+    #ItsNotMopheus_Image
+    {
+        height: 100px;
+        width:  96px;
+
+        margin-left: 40px;
+    }
+}
+
+/* Medium devices (Tablet) */
+@media screen and (min-width: 768px)
+{
+    #cabecalho
+    {
+        padding-left: 60px;
+    }
+
+    #titulo_cabecalho
+    {
+        text-align: initial;
+    }
+
+    #titulo_2_cabecalho
+    {
+        text-align: initial;
+    }
+
+    #ItsNotMorpheus_Text
+    {
+        margin-left: 146.81px;
+    }
+
+    #ItsNotMopheus_Image
+    {
+        margin-left: 40px;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media screen and (min-width: 992px)
+{
+    #titulo_cabecalho
+    {
+        font-size: 3em;
+    }
+
+    #ItsNotMorpheus_Titulo
+    {
+        font-size: 3em;
+    }
+
+    #ItsNotMorpheus_Text
+    {
+        font-size: 2em;
+
+        margin-left: 198.085px;
+    }
+
+    #ItsNotMopheus_Image
+    {
+        height: 151px;
+        width:  144px;
+    }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px)
+{
+    #cabecalho
+    {
+        padding-left: 80px;
+    }
+}
+
+/* Extra large */
+@media screen and (min-width: 1200px)
+{
+    #cabecalho
+    {
+        padding-left: 100px;
+    }
+
+    #ItsNotMorpheus_Text
+    {
+        margin-left: 272.085px;
+    }
+}
+
+/* Laptop L */
+@media screen and (min-width: 1440px)
+{
+
+}
+
+/* 1080p (Full HD)*/
+@media screen and (min-width: 1920px)
+{
+
+}
+
+/* 4K */
+@media screen and (min-width: 2560px)
+{
+
+}
+
+/* ------------ Fonts ------------ */
+@font-face
+{
+    /* font-family: 'Brie Light';
+    src: url('font/Brie_Light/BRI293.TTF') */
+    font-family: 'Conv_BRI293';
+
+	src: url('F:/Bruno/Query/Portifolio/font/BrieLight/fonts/BRI293.eot');
+    src: local('☺'), url('F:/Bruno/Query/Portifolio/font/BrieLight/fonts/BRI293.woff') format('woff'), url('F:/Bruno/Query/Portifolio/font/BrieLight/fonts/BRI293.ttf') format('truetype'), url('F:/Bruno/Query/Portifolio/font/BrieLight/fonts/BRI293.svg') format('svg');
+    
+	font-weight: normal;
+	font-style: normal;
+}

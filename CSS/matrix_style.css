@@ -1,0 +1,200 @@
+/*------------Body------------*/
+body
+{
+    background-color: black;
+}
+
+/*------------Id´s------------*/
+
+#Blue_Pill
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#Red_Pill
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/*------------Classes------------*/
+.Container_Estilo
+{
+    position: absolute; 
+}
+
+/*---Video Background---*/
+#Video
+{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+/*------------Media Query------------*/
+/* Tablet */
+@media screen and (max-width: 767px)
+{
+    .Container_Estilo
+    {
+        top: 220px; 
+        left: 500px; 
+        position: absolute; 
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .Container_Estilo
+    {
+        top: 220px; 
+        left: 500px; 
+        position: absolute; 
+    }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px)
+{
+    .Container_Estilo
+    {
+        top: 180px; 
+        left: 180px; 
+        position: absolute; 
+    }
+
+    #Red_Pill
+    {
+        height: 100px;
+        margin-left: 140px;
+        margin-right: 260px;
+    }
+
+    #Blue_Pill
+    {
+        height: 100px;
+        margin-right: 320px;
+        margin-top: 20px;
+    }
+}
+
+/* Extra large */
+@media screen and (min-width: 1200px)
+{
+    .Container_Estilo
+    {
+        top: 180px; 
+        left: 100px; 
+        position: absolute; 
+    }
+
+    #Red_Pill
+    {
+        height: 130px;
+        margin-left: 180px;
+        margin-right: 200px;
+    }
+
+    #Blue_Pill
+    {
+        height: 130px;
+        margin-right: 220px;
+        margin-top: 20px;
+    }
+}
+
+/* Laptop L */
+@media screen and (min-width: 1440px)
+{
+    .Container_Estilo
+    {
+        top: 220px; 
+        left: 200px; 
+        position: absolute; 
+    }
+
+    #Red_Pill
+    {
+        height: 150px;
+        margin-left: 180px;
+        margin-right: 240px;
+    }
+
+    #Blue_Pill
+    {
+        height: 150px;
+        margin-right: 200px;
+        margin-top: 20px;
+    }
+}
+
+/* 1080p (Full HD)*/
+@media screen and (min-width: 1920px)
+{
+    .Container_Estilo
+    {
+        top: 380px; 
+        left: 650px; 
+        position: absolute; 
+    }
+
+    #Red_Pill
+    {
+        height: 200px;
+        margin-left: 0px;
+        margin-right: 300px;
+    }
+
+    #Blue_Pill
+    {
+        height: 200px;
+        margin-right: -1px;
+    }
+}
+
+/* 4K */
+@media screen and (min-width: 2560px)
+{
+    .Container_Estilo
+    {
+        top: 440px; 
+        left: 680px; 
+        position: absolute; 
+    }
+
+    #Red_Pill
+    {
+        height: 150px;
+        margin-left: 30px;
+        margin-right: 250px;
+    }
+
+    #Blue_Pill
+    {
+        height: 200px;
+        margin-right: -1px;
+    }
+}
+
+/*------------Media Query Video------------*/
+@media (min-aspect-ratio: 16/9)
+{
+    #Video
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9)
+{   
+    #Video
+    {
+        width: auto;
+        height: 100%;
+    }
+}
