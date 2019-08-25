@@ -32,16 +32,6 @@
 }
 
 /* ------------ ItsNotMorpheus ------------ */
-/* Container */
-#ItsNotMorpheus
-{
-    /* border: 1px solid red; */
-
-    padding-top: 78.2px;
-
-    height: 400px;
-}
-
 #ItsNotMorpheus_Titulo
 {
     /* border: 1px solid blue; */
@@ -73,15 +63,6 @@
 }
 
 /* ------------ Skills ------------ */
-#Skills
-{
-    /* border: 1px solid red; */
-
-    padding-top: 78.2px;
-
-    height: 400px;
-}
-
 #Skills_Titulo
 {
     /* border: 1px solid green; */
@@ -94,16 +75,33 @@
 }
 
 /* ------------ Classes ------------ */
+.Bloco
+{
+    padding-top: 78.2px;
+    height: 400px;
+}
+
 .Image
 {
     height: 90px;
-    width:  calc(100% - 1022px); /* 86px; */
-    margin-bottom: 10px;
+    width:  calc(100% - 1022px); /* 1110(div width - 88(Image width)) */
+    margin-bottom: 30px;
 }
 
 .Image_Left
 {
-    margin: 0px 10px 10px calc(100% - 640px);
+    margin: 0px 30px 30px calc(100% - 658px); /* Margin left: (1110(div width) - 206(Images width))/2 + 206(Images width) */
+}
+
+.Image_Center
+{
+    margin-left: calc(100% - 599px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
+}
+
+.Image_Link:hover
+{
+    -webkit-filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0 green);
+    filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0 green);
 }
 
 
