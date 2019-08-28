@@ -32,14 +32,16 @@
 }
 
 /* ------------ ItsNotMorpheus ------------ */
-#ItsNotMorpheus_Titulo
+/* #ItsNotMorpheus_Titulo
 {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     text-align: center;
-}
+
+    font-size: 3em;
+} */
 
 #ItsNotMorpheus_Text
 {
@@ -63,15 +65,16 @@
 }
 
 /* ------------ Skills ------------ */
-#Skills_Titulo
+#Skills_Text
 {
-    /* border: 1px solid green; */
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* padding-top: 14px; */
 
     text-align: center;
+    font-family: 'Conv_BRI293', sans-serif;
 
-    font-size: 3em;
+    /* float: left; */
+    
+    font-size: 2em;
 }
 
 /* ------------ Classes ------------ */
@@ -81,6 +84,13 @@
     height: 400px;
 }
 
+.Titulo_Bloco
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    text-align: center;
+}
+
 .Image
 {
     height: 90px;
@@ -88,20 +98,23 @@
     margin-bottom: 30px;
 }
 
-.Image_Left
+/* .Image_Left
 {
-    margin: 0px 30px 30px calc(100% - 658px); /* Margin left: (1110(div width) - 206(Images width))/2 + 206(Images width) */
-}
+    margin: 0px 30px 30px calc(100% - 658px); 
+} */
+/* Margin left: (1110(div width) - 206(Images width))/2 + 206(Images width) */
 
 .Image_Center
 {
+    height: 90px;
+    width:  calc(100% - 1022px);
     margin-left: calc(100% - 599px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
 }
 
 .Image_Link:hover
 {
-    -webkit-filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0 green);
-    filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0 green);
+    -webkit-filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0 #1dd1a1);
+    filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0#1dd1a1);
 }
 
 
@@ -164,11 +177,6 @@
         text-align: center;
     }
 
-    #ItsNotMorpheus_Titulo
-    {
-        font-size: 2em;
-    }
-
     #ItsNotMorpheus_Text
     {
         font-size: 1.5em;
@@ -181,6 +189,11 @@
         width:  96px;
 
         margin-left: 40px;
+    }
+
+    .Titulo_Bloco
+    {
+        font-size: 2em;
     }
 }
 
@@ -221,11 +234,6 @@
         font-size: 3em;
     }
 
-    #ItsNotMorpheus_Titulo
-    {
-        font-size: 3em;
-    }
-
     #ItsNotMorpheus_Text
     {
         font-size: 2em;
@@ -238,6 +246,12 @@
         height: 151px;
         width:  144px;
     }
+
+    .Titulo_Bloco
+    {
+        font-size: 3em;
+    }
+
 }
 
 /* Laptop */
@@ -246,6 +260,23 @@
     #cabecalho
     {
         padding-left: 80px;
+    }
+
+    .Image_Left
+    {
+        margin: 0px 10px 10px calc(100% - 658px);     /* Margin left: (1110(div width) - 206(Images width))/2 + 206(Images width) */
+    }
+
+    .Image_Center
+    {
+        margin-left: calc(100% - 599px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
+    }
+
+    .Image
+    {
+        height: 90px;
+        width:  calc(100% - 842px); /* 1110(div width - 88(Image width)) */
+        margin-bottom: 30px;
     }
 }
 
@@ -260,6 +291,23 @@
     #ItsNotMorpheus_Text
     {
         margin-left: 272.085px;
+    }
+
+    .Image_Left
+    {
+        margin: 0px 30px 30px calc(100% - 658px); /* Margin left: (1110(div width) - 206(Images width))/2 + 206(Images width) */
+    }
+
+    .Image_Center
+    {
+        margin-left: calc(100% - 599px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
+    }
+
+    .Image
+    {
+        height: 90px;
+        width:  calc(100% - 1022px); /* 1110(div width - 88(Image width)) */
+        margin-bottom: 30px;
     }
 }
 
