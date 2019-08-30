@@ -32,17 +32,6 @@
 }
 
 /* ------------ ItsNotMorpheus ------------ */
-/* #ItsNotMorpheus_Titulo
-{
-    border: 1px solid blue;
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    text-align: center;
-
-    font-size: 3em;
-} */
-
 #ItsNotMorpheus_Text
 {
     /* border: 1px solid red; */
@@ -67,13 +56,9 @@
 /* ------------ Skills ------------ */
 #Skills_Text
 {
-    /* padding-top: 14px; */
-
     text-align: center;
-    font-family: 'Conv_BRI293', sans-serif;
 
-    /* float: left; */
-    
+    font-family: 'Conv_BRI293', sans-serif;  
     font-size: 2em;
 }
 
@@ -91,26 +76,7 @@
     text-align: center;
 }
 
-.Image
-{
-    height: 90px;
-    width:  calc(100% - 1022px); /* 1110(div width - 88(Image width)) */
-    margin-bottom: 30px;
-}
-
-/* .Image_Left
-{
-    margin: 0px 30px 30px calc(100% - 658px); 
-} */
-/* Margin left: (1110(div width) - 206(Images width))/2 + 206(Images width) */
-
-.Image_Center
-{
-    height: 90px;
-    width:  calc(100% - 1022px);
-    margin-left: calc(100% - 599px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
-}
-
+/* ------ Images ------ */
 .Image_Link:hover
 {
     -webkit-filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0 #1dd1a1);
@@ -154,6 +120,25 @@
         height: 90px;
         width:  86px;
     }
+
+    .Image_Left
+    {
+        margin: 0px 10px 30px calc((100% - 166px)/2); /* 166px(Images Width + 10px margin) */
+    }
+
+    .Image
+    {
+        height: 80px;
+        width:  78px; /* 510(div width - 78(Image width)) */
+        margin-bottom: 30px;
+    }
+
+    .Image_Center
+    {
+        height: 80px;
+        width:  78px; /* 510(div width - 78(Image width)) */
+        margin-left: calc((100% - 78px)/2);
+    }
 }
 
 @media screen and (min-width: 577px)
@@ -195,6 +180,25 @@
     {
         font-size: 2em;
     }
+
+    .Image_Left
+    {
+        margin: 0px 30px 30px calc(100% - 348px); /* Margin left: (510(div width) - 186(Images width))/2 + 186(Images width) */
+    }
+
+    .Image
+    {
+        height: 80px;
+        width:  calc(100% - 432px); /* 510(div width - 78(Image width)) */
+        margin-bottom: 30px;
+    }
+
+    .Image_Center
+    {
+        height: 80px;
+        width:  calc(100% - 432px); /* 510(div width - 78(Image width)) */
+        margin-left: calc(100% - 294px); /* 510(div width) - 78(Image width)/2 + 78(Image width) */
+    }
 }
 
 /* Medium devices (Tablet) */
@@ -224,6 +228,22 @@
     {
         margin-left: 40px;
     }
+    
+    .Image_Left
+    {
+        margin: 0px 30px 30px calc(100% - 438px); /* Margin left: (690(div width) - 186(Images width))/2 + 186(Images width) */
+    }
+
+    .Image
+    {
+        width:  calc(100% - 612px); /* 690(div width - 78(Image width)) */
+    }
+
+    .Image_Center
+    {
+        width:  calc(100% - 612px); /* 690(div width - 78(Image width)) */
+        margin-left: calc(100% - 384px); /* 690(div width) - 78(Image width)/2 + 78(Image width) */
+    }
 }
 
 /* Large Devices (Desktops) */
@@ -252,6 +272,24 @@
         font-size: 3em;
     }
 
+    .Image_Left
+    {
+        margin: 0px 30px 30px calc(100% - 568px); /* Margin left: (930(div width) - 206(Images width))/2 + 206(Images width) */
+    }
+
+    .Image
+    {
+        height: 90px;
+        width:  calc(100% - 842px); /* 930(div width - 88(Image width)) */
+    }
+
+    .Image_Center
+    {
+        height: 90px;
+        width:  calc(100% - 842px); /* 930(div width - 88(Image width)) */
+        margin-left: calc(100% - 509px); /* 930(div width) - 88(Image width)/2 + 88(Image width) */
+    }
+
 }
 
 /* Laptop */
@@ -264,12 +302,12 @@
 
     .Image_Left
     {
-        margin: 0px 10px 10px calc(100% - 658px);     /* Margin left: (1110(div width) - 206(Images width))/2 + 206(Images width) */
+        margin: 0px 30px 30px calc(100% - 568px); /* Margin left: (930(div width) - 206(Images width))/2 + 206(Images width) */
     }
 
     .Image_Center
     {
-        margin-left: calc(100% - 599px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
+        margin-left: calc(100% - 509px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
     }
 
     .Image
@@ -308,6 +346,12 @@
         height: 90px;
         width:  calc(100% - 1022px); /* 1110(div width - 88(Image width)) */
         margin-bottom: 30px;
+    }
+
+    .Image_Center
+    {
+        width:  calc(100% - 1022px);
+        margin-left: calc(100% - 599px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
     }
 }
 
