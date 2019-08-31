@@ -44,6 +44,11 @@
     float: left;
 }
 
+#itsNotMorpheus_Bloco
+{
+    padding-top: 78.2px;
+}
+
 #ItsNotMopheus_Image
 {
     /* border: 1px solid black; */
@@ -62,13 +67,26 @@
     font-size: 2em;
 }
 
-/* ------------ Classes ------------ */
-.Bloco
+#Contact_Bloco
 {
-    padding-top: 78.2px;
-    height: 400px;
+    height: 200px;
+    background-color: #222f3e;
 }
 
+#Contact_Text
+{
+    color: #1dd1a1;
+
+    font-family: 'Conv_BRI293', sans-serif; 
+    font-size: 3em;
+
+    text-align: center;
+
+    padding-top: 71.2px;
+
+}
+
+/* ------------ Classes ------------ */
 .Titulo_Bloco
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -81,6 +99,12 @@
 {
     -webkit-filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0 #1dd1a1);
     filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0#1dd1a1);
+}
+
+.Image_Photo
+{
+    height: 162.5px;
+    width: 108.375px;
 }
 
 
@@ -121,6 +145,11 @@
         width:  86px;
     }
 
+    #itsNotMorpheus_Bloco
+    {
+        height: 350px;
+    }
+
     .Image_Left
     {
         margin: 0px 10px 30px calc((100% - 166px)/2); /* 166px(Images Width + 10px margin) */
@@ -138,6 +167,11 @@
         height: 80px;
         width:  78px; /* 510(div width - 78(Image width)) */
         margin-left: calc((100% - 78px)/2);
+    }
+
+    .Bloco
+    {
+        padding-top: 0px;
     }
 }
 
@@ -168,6 +202,11 @@
         margin-left: 67.81px;
     }
 
+    #itsNotMorpheus_Bloco
+    {
+        height: 350px;
+    }
+
     #ItsNotMopheus_Image
     {
         height: 100px;
@@ -179,6 +218,11 @@
     .Titulo_Bloco
     {
         font-size: 2em;
+    }
+
+    .Bloco
+    {
+        padding-top: 0px;
     }
 
     .Image_Left
@@ -267,6 +311,11 @@
         width:  144px;
     }
 
+    #itsNotMorpheus_Bloco
+    {
+        height: 400px;
+    }
+
     .Titulo_Bloco
     {
         font-size: 3em;
@@ -288,6 +337,11 @@
         height: 90px;
         width:  calc(100% - 842px); /* 930(div width - 88(Image width)) */
         margin-left: calc(100% - 509px); /* 930(div width) - 88(Image width)/2 + 88(Image width) */
+    }
+
+    .Bloco
+    {
+        padding-top: 78.2px;
     }
 
 }
