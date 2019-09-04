@@ -34,15 +34,11 @@
 /* ------------ ItsNotMorpheus ------------ */
 #itsNotMorpheus_Bloco
 {
-    /* border: 1px solid green; */
-
     padding-top: 78.2px;
 }
 
 #ItsNotMorpheus_Text
 {
-    /* border: 1px solid red; */
-
     text-align: right;
     font-family: 'Conv_BRI293', sans-serif;
 
@@ -53,8 +49,6 @@
 
 #ItsNotMopheus_Image
 {
-    /* border: 1px solid black; */
-
     float: left;
 
     padding-left: 0px;
@@ -97,6 +91,33 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     text-align: center;
+}
+
+.Image
+{
+    height: 90px;
+    width: calc(100% - (100% - 88px));
+}
+
+.Image_Left
+{
+    float: right;
+
+    right: 0px;
+
+    margin-bottom: 10px;
+}
+
+.Image_Right
+{
+    left: 0px;
+
+    margin-bottom: 10px;
+}
+
+.Image_Center
+{
+    margin-left: calc((100% - 88px)/2);
 }
 
 /* ------ Images ------ */
@@ -143,25 +164,6 @@
     #itsNotMorpheus_Bloco
     {
         height: 350px;
-    }
-
-    .Image_Left
-    {
-        margin: 0px 10px 30px calc((100% - 166px)/2); /* 166px(Images Width + 10px margin) */
-    }
-
-    .Image
-    {
-        height: 80px;
-        width:  78px; /* 510(div width - 78(Image width)) */
-        margin-bottom: 30px;
-    }
-
-    .Image_Center
-    {
-        height: 80px;
-        width:  78px; /* 510(div width - 78(Image width)) */
-        margin-left: calc((100% - 78px)/2);
     }
 
     .Bloco
@@ -216,25 +218,6 @@
     {
         padding-top: 0px;
     }
-
-    .Image_Left
-    {
-        margin: 0px 30px 30px calc(100% - 348px); /* Margin left: (510(div width) - 186(Images width))/2 + 186(Images width) */
-    }
-
-    .Image
-    {
-        height: 80px;
-        width:  calc(100% - 432px); /* 510(div width - 78(Image width)) */
-        margin-bottom: 30px;
-    }
-
-    .Image_Center
-    {
-        height: 80px;
-        width:  calc(100% - 432px); /* 510(div width - 78(Image width)) */
-        margin-left: calc(100% - 294px); /* 510(div width) - 78(Image width)/2 + 78(Image width) */
-    }
 }
 
 /* Medium devices (Tablet) */
@@ -253,22 +236,6 @@
     #titulo_2_cabecalho
     {
         text-align: initial;
-    }
-
-    .Image_Left
-    {
-        margin: 0px 30px 30px calc(100% - 438px); /* Margin left: (690(div width) - 186(Images width))/2 + 186(Images width) */
-    }
-
-    .Image
-    {
-        width:  calc(100% - 612px); /* 690(div width - 78(Image width)) */
-    }
-
-    .Image_Center
-    {
-        width:  calc(100% - 612px); /* 690(div width - 78(Image width)) */
-        margin-left: calc(100% - 384px); /* 690(div width) - 78(Image width)/2 + 78(Image width) */
     }
 }
 
@@ -301,24 +268,6 @@
         font-size: 3em;
     }
 
-    .Image_Left
-    {
-        margin: 0px 30px 30px calc(100% - 568px); /* Margin left: (930(div width) - 206(Images width))/2 + 206(Images width) */
-    }
-
-    .Image
-    {
-        height: 90px;
-        width:  calc(100% - 842px); /* 930(div width - 88(Image width)) */
-    }
-
-    .Image_Center
-    {
-        height: 90px;
-        width:  calc(100% - 842px); /* 930(div width - 88(Image width)) */
-        margin-left: calc(100% - 509px); /* 930(div width) - 88(Image width)/2 + 88(Image width) */
-    }
-
     .Bloco
     {
         padding-top: 78.2px;
@@ -333,23 +282,6 @@
     {
         padding-left: 80px;
     }
-
-    .Image_Left
-    {
-        margin: 0px 30px 30px calc(100% - 568px); /* Margin left: (930(div width) - 206(Images width))/2 + 206(Images width) */
-    }
-
-    .Image_Center
-    {
-        margin-left: calc(100% - 509px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
-    }
-
-    .Image
-    {
-        height: 90px;
-        width:  calc(100% - 842px); /* 1110(div width - 88(Image width)) */
-        margin-bottom: 30px;
-    }
 }
 
 /* Extra large */
@@ -358,29 +290,6 @@
     #cabecalho
     {
         padding-left: 100px;
-    }
-
-    .Image_Left
-    {
-        margin: 0px 30px 30px calc(100% - 658px); /* Margin left: (1110(div width) - 206(Images width))/2 + 206(Images width) */
-    }
-
-    .Image_Center
-    {
-        margin-left: calc(100% - 599px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
-    }
-
-    .Image
-    {
-        height: 90px;
-        width:  calc(100% - 1022px); /* 1110(div width - 88(Image width)) */
-        margin-bottom: 30px;
-    }
-
-    .Image_Center
-    {
-        width:  calc(100% - 1022px);
-        margin-left: calc(100% - 599px); /* 1110(div width) - 88(Image width)/2 + 88(Image width) */
     }
 }
 
