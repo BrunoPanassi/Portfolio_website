@@ -32,30 +32,35 @@
 }
 
 /* ------------ ItsNotMorpheus ------------ */
+#itsNotMorpheus_Bloco
+{
+    /* border: 1px solid green; */
+
+    padding-top: 78.2px;
+}
+
 #ItsNotMorpheus_Text
 {
     /* border: 1px solid red; */
 
-    padding-top: 14px;
-
-    text-align: center;
+    text-align: right;
     font-family: 'Conv_BRI293', sans-serif;
 
-    float: left;
-}
+    padding-right: 0px;
 
-#itsNotMorpheus_Bloco
-{
-    padding-top: 78.2px;
+    font-size: 1.5em;
 }
 
 #ItsNotMopheus_Image
 {
     /* border: 1px solid black; */
 
-    margin-top: 13.2px;
-
     float: left;
+
+    padding-left: 0px;
+
+    height: 131px;
+    width:  124px;
 }
 
 /* ------------ Skills ------------ */
@@ -65,12 +70,14 @@
 
     font-family: 'Conv_BRI293', sans-serif;  
     font-size: 2em;
+    margin-bottom: 100px;
 }
 
 #Contact_Bloco
 {
     height: 200px;
     background-color: #222f3e;
+    padding-top: 71.2px;
 }
 
 #Contact_Text
@@ -81,8 +88,6 @@
     font-size: 3em;
 
     text-align: center;
-
-    padding-top: 71.2px;
 
 }
 
@@ -99,12 +104,6 @@
 {
     -webkit-filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0 #1dd1a1);
     filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0#1dd1a1);
-}
-
-.Image_Photo
-{
-    height: 162.5px;
-    width: 108.375px;
 }
 
 
@@ -132,17 +131,13 @@
 
     #ItsNotMorpheus_Text
     {
-        font-size: 1.5em;
-        margin: auto;
-        width: 75%;
+        font-size: 1.2em;
     }
 
     #ItsNotMopheus_Image
     {
-        margin-top: 23.2px;
-
-        height: 90px;
-        width:  86px;
+        height: 91px;
+        width:  84px;
     }
 
     #itsNotMorpheus_Bloco
@@ -199,20 +194,17 @@
     #ItsNotMorpheus_Text
     {
         font-size: 1.5em;
-        margin-left: 67.81px;
+    }
+
+    #ItsNotMopheus_Image
+    {
+        height: 101px;
+        width:  94px;
     }
 
     #itsNotMorpheus_Bloco
     {
         height: 350px;
-    }
-
-    #ItsNotMopheus_Image
-    {
-        height: 100px;
-        width:  96px;
-
-        margin-left: 40px;
     }
 
     .Titulo_Bloco
@@ -263,16 +255,6 @@
         text-align: initial;
     }
 
-    #ItsNotMorpheus_Text
-    {
-        margin-left: 146.81px;
-    }
-
-    #ItsNotMopheus_Image
-    {
-        margin-left: 40px;
-    }
-    
     .Image_Left
     {
         margin: 0px 30px 30px calc(100% - 438px); /* Margin left: (690(div width) - 186(Images width))/2 + 186(Images width) */
@@ -301,14 +283,12 @@
     #ItsNotMorpheus_Text
     {
         font-size: 2em;
-
-        margin-left: 198.085px;
     }
 
     #ItsNotMopheus_Image
     {
-        height: 151px;
-        width:  144px;
+        height: 131px;
+        width:  124px;
     }
 
     #itsNotMorpheus_Bloco
@@ -378,11 +358,6 @@
     #cabecalho
     {
         padding-left: 100px;
-    }
-
-    #ItsNotMorpheus_Text
-    {
-        margin-left: 272.085px;
     }
 
     .Image_Left
