@@ -1,9 +1,17 @@
-/* ------------ Id´s ------------ */
-#body
+/* Components */
+body
 {
     overflow-y: hidden;
 }
 
+footer
+{
+    height: 150px;
+    background-color: #222f3e;
+    padding-top: 42.2px;
+}
+
+/* ------------ Id´s ------------ */
 /* ------ Cabecalho ------ */
 #cabecalho
 {
@@ -14,9 +22,9 @@
 
     background-color: #222f3e;
 
-    margin-bottom: 75px;
-
     padding-top: 32.8px;
+
+    margin-bottom: 75px;
 }
 
 #titulo_cabecalho
@@ -63,13 +71,6 @@
 
     font-family: 'Conv_BRI293', sans-serif;  
     font-size: 2em;
-}
-
-#Contact_Bloco
-{
-    height: 200px;
-    background-color: #222f3e;
-    padding-top: 71.2px;
 }
 
 #Contact_Text
