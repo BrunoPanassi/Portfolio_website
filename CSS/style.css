@@ -90,8 +90,6 @@ footer
 {
     height: 160px;
 
-    overflow-y: scroll;
-
     transition: 2.5s;
 }
 

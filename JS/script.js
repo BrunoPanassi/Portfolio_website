@@ -66,4 +66,6 @@ function ChangeSizeContainer()
     var container = document.getElementsByClassName("cabecalho")[0]
 
     container.classList.add("ChangeSize")
+
+    document.body.style.overflowY = "scroll"
 }
