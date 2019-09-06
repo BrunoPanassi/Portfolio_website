@@ -63,23 +63,7 @@ function TypeWriterH2()
 
 function ChangeSizeContainer()
 {
-    var container = document.getElementById('cabecalho')
+    var container = document.getElementsByClassName("cabecalho")[0]
 
-    var Pixels = 1080 //Deve ter a mesma quantidade que o 'height' de '#cabecalho' 
-
-    var Intervalo = setInterval(ChangeSize, 0)
-
-    function ChangeSize()
-    {
-        if (container.offsetHeight == 160)
-        {
-            clearInterval(Intervalo)
-
-            document.body.style.overflowY = "scroll"
-        } else {
-            Pixels--
-
-            container.style.height = Pixels + "px"
-        }
-    }
+    container.classList.add("ChangeSize")
 }

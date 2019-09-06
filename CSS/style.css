@@ -12,21 +12,7 @@ footer
 }
 
 /* ------------ Id´s ------------ */
-/* ------ Cabecalho ------ */
-#cabecalho
-{
-    height: 1080px;
-
-    border: none;
-    outline: none;
-
-    background-color: #222f3e;
-
-    padding-top: 32.8px;
-
-    margin-bottom: 75px;
-}
-
+/* ------------ Cabecalho ------------ */
 #titulo_cabecalho
 {
     color: #1dd1a1;
@@ -85,11 +71,31 @@ footer
 }
 
 /* ------------ Classes ------------ */
-.Bloco
+/* ------ Cabecalho ------ */
+.cabecalho
 {
+    height: 1080px;
+
+    border: none;
+    outline: none;
+
+    background-color: #222f3e;
+
+    padding-top: 32.8px;
+
     margin-bottom: 75px;
 }
 
+.cabecalho.ChangeSize
+{
+    height: 160px;
+
+    overflow-y: scroll;
+
+    transition: 2.5s;
+}
+
+/* ------ Bloco ------ */
 .Titulo_Bloco
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -97,6 +103,12 @@ footer
     text-align: center;
 }
 
+.Bloco
+{
+    margin-bottom: 75px;
+}
+
+/* ------ Images ------ */
 .Image
 {
     height: 90px;
@@ -124,7 +136,6 @@ footer
     margin-left: calc((100% - 88px)/2);
 }
 
-/* ------ Images ------ */
 .Image_Link:hover
 {
     -webkit-filter: drop-shadow(2px 1px 0 green) drop-shadow(-1px -1px 0 #1dd1a1);
@@ -214,12 +225,6 @@ footer
     }
 }
 
-/* Medium devices (Tablet) */
-@media screen and (min-width: 768px)
-{
-
-}
-
 /* Large Devices (Desktops) */
 @media screen and (min-width: 992px)
 {
@@ -255,36 +260,6 @@ footer
     {
         font-size: 3em;
     }
-
-}
-
-/* Laptop */
-@media screen and (min-width: 1024px)
-{
-
-}
-
-/* Extra large */
-@media screen and (min-width: 1200px)
-{
-    
-}
-
-/* Laptop L */
-@media screen and (min-width: 1440px)
-{
-
-}
-
-/* 1080p (Full HD)*/
-@media screen and (min-width: 1920px)
-{
-
-}
-
-/* 4K */
-@media screen and (min-width: 2560px)
-{
 
 }
 
