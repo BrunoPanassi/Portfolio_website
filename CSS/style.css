@@ -67,8 +67,8 @@ footer
     font-size: 3em;
 
     text-align: center;
-
 }
+
 
 /* ------------ Classes ------------ */
 /* ------ Cabecalho ------ */
@@ -90,7 +90,7 @@ footer
 {
     height: 160px;
 
-    transition: 2.5s;
+    transition: 2s;
 }
 
 /* ------ Bloco ------ */
@@ -111,6 +111,12 @@ footer
 {
     height: 90px;
     width: calc(100% - (100% - 88px));
+}
+
+.Image_Small
+{
+    height: 70px;
+    width: calc(100% - (100% - 68px));
 }
 
 .Image_Left
@@ -145,7 +151,7 @@ footer
 /* Extra Small  (Portrait Phones)*/
 @media screen and (max-width: 576px)
 {
-    #cabecalho
+    .cabecalho
     {
         padding-top: 42.4px;
     }
@@ -188,7 +194,7 @@ footer
 
 @media screen and (min-width: 577px)
 {
-    #cabecalho
+    .cabecalho
     {
         padding-top: 42.4px;
     }

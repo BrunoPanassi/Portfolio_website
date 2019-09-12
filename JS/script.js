@@ -8,10 +8,82 @@ var Velocidade = 120
 
 var TimeOut
 
+var NivelOpacidade = 99 
+var ComponenteParm = 0
+
+var ComponenteText = document.createElement("H2")
+ComponenteText.innerText = "More info"
+ComponenteText.style.color = "#1dd1a1"
+ComponenteText.style.fontFamily = 'Conv_BRI293', "sans-serif"
+ComponenteText.style.fontSize = "3em"
+ComponenteText.style.textAlign = "center"
+
+var ComponenteImgLink = document.createElement("A")
+ComponenteImgLink.href = "https://www.linkedin.com/in/bruno-henrique-bb3a19141/"
+ComponenteImgLink.target = "_blank"
+
+var ComponenteImg = document.createElement("IMG")
+ComponenteImg.src = "Images/Linkedin.png"
+ComponenteImg.className = "Image_Small Image_Center"
+ComponenteImg.style.opacity = "0"
+ComponenteImgLink.appendChild(ComponenteImg)
+
 function WaitToStart()
 {
+    var ContactBox  = document.getElementById('Contact_Text_Box')
+    ContactBox.appendChild(ComponenteText)
+
     TimeOut = setTimeout(TypeWriterH1, 1000)
 }
+
+function HoverEffect()
+{
+    console.log("Hover Effect, ComponenteParm: " + ComponenteParm.toString())
+
+    var ContactBox  = document.getElementById('Contact_Text_Box')  
+
+    FadeOutEffect()
+
+    function FadeOutEffect()
+    {
+        if (NivelOpacidade == 0)
+        {
+            ContactBox.removeChild(ComponenteText)
+            document.getElementById("Contact_Text_Box").appendChild(ComponenteImgLink)
+
+            FadeInEffect()
+        }
+        else
+        {
+            ComponenteText.style.opacity = (NivelOpacidade/100).toString()
+            NivelOpacidade--
+
+            FadeOutEffect()
+        }
+    }
+
+    function FadeInEffect()
+    {
+        var IntervaloFadeIn = setTimeout(FadeIn, 0)
+
+        function FadeIn()
+        {
+            if (NivelOpacidade == 99)
+            {
+                clearTimeout(IntervaloFadeIn)
+            }
+            else
+            {
+                ComponenteImg.style.opacity = (NivelOpacidade/100).toString()
+                NivelOpacidade++
+
+                IntervaloFadeIn = setTimeout(FadeIn, 0)
+            }
+        }
+    }
+}
+
+
 
 function TypeWriterH1()
 {
