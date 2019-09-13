@@ -28,9 +28,11 @@ ComponenteImg.className = "Image_Small Image_Center"
 ComponenteImg.style.opacity = "0"
 ComponenteImgLink.appendChild(ComponenteImg)
 
+var ContactBox  = document.getElementById('Contact_Text_Box')  
+
 function WaitToStart()
 {
-    var ContactBox  = document.getElementById('Contact_Text_Box')
+    ContactBox  = document.getElementById('Contact_Text_Box')
     ContactBox.appendChild(ComponenteText)
 
     TimeOut = setTimeout(TypeWriterH1, 1000)
@@ -38,8 +40,6 @@ function WaitToStart()
 
 function HoverEffect(EventoParm)
 {
-    var ContactBox  = document.getElementById('Contact_Text_Box')  
-
     FadeOutEffect()
 
     function FadeOutEffect()
