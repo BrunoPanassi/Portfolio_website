@@ -9,7 +9,7 @@ var Velocidade = 120
 var TimeOut
 
 var NivelOpacidade = 99 
-var ComponenteParm = 0
+var EventoParm
 
 var ComponenteText = document.createElement("H2")
 ComponenteText.innerText = "More info"
@@ -36,10 +36,8 @@ function WaitToStart()
     TimeOut = setTimeout(TypeWriterH1, 1000)
 }
 
-function HoverEffect()
+function HoverEffect(EventoParm)
 {
-    console.log("Hover Effect, ComponenteParm: " + ComponenteParm.toString())
-
     var ContactBox  = document.getElementById('Contact_Text_Box')  
 
     FadeOutEffect()
@@ -48,15 +46,31 @@ function HoverEffect()
     {
         if (NivelOpacidade == 0)
         {
-            ContactBox.removeChild(ComponenteText)
-            document.getElementById("Contact_Text_Box").appendChild(ComponenteImgLink)
+            if (EventoParm == 'MouseOver')
+            {
+                ContactBox.removeChild(ComponenteText)
+                ContactBox.appendChild(ComponenteImgLink)
+            }
+            else if (EventoParm == 'MouseOut')
+            {
+                ContactBox.removeChild(ComponenteImgLink)
+                ContactBox.appendChild(ComponenteText)
+            }
 
             FadeInEffect()
         }
         else
         {
-            ComponenteText.style.opacity = (NivelOpacidade/100).toString()
-            NivelOpacidade--
+            if (EventoParm == 'MouseOver')
+            {
+                ComponenteText.style.opacity = (NivelOpacidade/100).toString()
+                NivelOpacidade--
+            }
+            else if (EventoParm == 'MouseOut')
+            {   
+                ComponenteImg.style.opacity = (NivelOpacidade/100).toString()
+                NivelOpacidade--
+            }
 
             FadeOutEffect()
         }
@@ -74,8 +88,16 @@ function HoverEffect()
             }
             else
             {
-                ComponenteImg.style.opacity = (NivelOpacidade/100).toString()
-                NivelOpacidade++
+                if (EventoParm == 'MouseOver')
+                {
+                    ComponenteImg.style.opacity = (NivelOpacidade/100).toString()
+                    NivelOpacidade++
+                }
+                else if (EventoParm == 'MouseOut')
+                {
+                    ComponenteText.style.opacity = (NivelOpacidade/100).toString()
+                    NivelOpacidade++
+                }
 
                 IntervaloFadeIn = setTimeout(FadeIn, 0)
             }
