@@ -24,7 +24,7 @@ ComponenteImgLink.target = "_blank"
 
 var ComponenteImg = document.createElement("IMG")
 ComponenteImg.src = "Images/Linkedin.png"
-ComponenteImg.className = "Image_Small Image_Center"
+ComponenteImg.className = "Image_Small Image_Small_Center"
 ComponenteImg.style.opacity = "0"
 ComponenteImgLink.appendChild(ComponenteImg)
 

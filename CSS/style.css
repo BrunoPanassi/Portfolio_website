@@ -135,6 +135,11 @@ footer
     margin-bottom: 10px;
 }
 
+.Image_Small_Center
+{
+    margin-left: calc((100% - 68px)/2);
+}
+
 .Image_Center
 {
     margin-left: calc((100% - 88px)/2);
