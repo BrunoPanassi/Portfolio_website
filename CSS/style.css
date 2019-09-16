@@ -30,6 +30,11 @@ footer
 }
 
 /* ------------ ItsNotMorpheus ------------ */
+#Section_ItsNotMorpheus
+{
+    opacity: 0;
+}
+
 #ItsNotMorpheus_Text
 {
     text-align: right;
@@ -51,6 +56,11 @@ footer
 }
 
 /* ------------ Skills ------------ */
+#Section_Skills
+{
+    opacity: 0;
+}
+
 #Skills_Text
 {
     text-align: center;
@@ -82,8 +92,6 @@ footer
     background-color: #222f3e;
 
     padding-top: 32.8px;
-
-    margin-bottom: 75px;
 }
 
 .cabecalho.ChangeSize
@@ -103,6 +111,7 @@ footer
 
 .Bloco
 {
+    margin-top: 200px;
     margin-bottom: 75px;
 }
 

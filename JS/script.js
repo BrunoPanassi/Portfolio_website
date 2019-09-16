@@ -25,12 +25,58 @@ ComponenteImgLink.target = "_blank"
 var ComponenteImg = document.createElement("IMG")
 ComponenteImg.src = "Images/Linkedin.png"
 ComponenteImg.className = "Image_Small Image_Small_Center"
-ComponenteImg.style.opacity = "0"
+ComponenteImg.style.ItsNotMorpheus_Opacity = "0"
 ComponenteImgLink.appendChild(ComponenteImg)
 
 var ContactBox  = document.getElementById('Contact_Text_Box')  
 
+var ItsNotMorpheus_Opacity = 0
+var Skills_Opacity = 0
 
+window.onscroll = function() {Scroll()}
+
+function Scroll()
+{
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)
+    {   
+        var IntervaloFadeInMorpheus = setTimeout(FadeIn, 50)
+
+        function FadeIn()
+        {
+            if (ItsNotMorpheus_Opacity == 99)
+            {
+                clearTimeout(IntervaloFadeInMorpheus)
+            }
+            else
+            {
+                document.getElementById('Section_ItsNotMorpheus').style.opacity = (ItsNotMorpheus_Opacity/100).toString()
+                ItsNotMorpheus_Opacity++
+                
+                IntervaloFadeInMorpheus = setTimeout(FadeIn, 50)
+            }
+        }
+    }
+
+    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450)
+    {
+        var IntervaloFadeInSkills = setTimeout(FadeIn, 50)
+
+        function FadeIn()
+        {
+            if (Skills_Opacity == 99)
+            {
+                clearTimeout(IntervaloFadeInSkills)
+            }
+            else
+            {
+                document.getElementById('Section_Skills').style.opacity = (Skills_Opacity/100).toString()
+                Skills_Opacity++
+                
+                IntervaloFadeInSkills = setTimeout(FadeIn, 50)
+            }
+        }
+    }
+}
 
 function WaitToStart()
 {
@@ -112,8 +158,6 @@ function HoverEffect(EventoParm)
         }
     }
 }
-
-
 
 function TypeWriterH1()
 {
