@@ -17,6 +17,7 @@ ComponenteText.style.color = "#1dd1a1"
 ComponenteText.style.fontFamily = 'Conv_BRI293', "sans-serif"
 ComponenteText.style.fontSize = "3em"
 ComponenteText.style.textAlign = "center"
+ComponenteText.style.opacity = "0"
 
 var ComponenteImgLink = document.createElement("A")
 ComponenteImgLink.href = "https://www.linkedin.com/in/bruno-henrique-bb3a19141/"
@@ -70,6 +71,8 @@ function Scroll()
             else
             {
                 document.getElementById('Section_Skills').style.opacity = (Skills_Opacity/100).toString()
+                ComponenteText.style.opacity = (Skills_Opacity/100).toString()
+                
                 Skills_Opacity++
                 
                 IntervaloFadeInSkills = setTimeout(FadeIn, 50)
