@@ -30,12 +30,20 @@ ComponenteImgLink.appendChild(ComponenteImg)
 
 var ContactBox  = document.getElementById('Contact_Text_Box')  
 
+
+
 function WaitToStart()
 {
     ContactBox  = document.getElementById('Contact_Text_Box')
     ContactBox.appendChild(ComponenteText)
 
     TimeOut = setTimeout(TypeWriterH1, 1000)
+}
+
+function ScrollToTheTop()
+{
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0 
 }
 
 function HoverEffect(EventoParm)
@@ -109,6 +117,8 @@ function HoverEffect(EventoParm)
 
 function TypeWriterH1()
 {
+    ScrollToTheTop()
+
     if (ContadorTextoH1 < TextoH1.length)
     {
         Velocidade = 120
