@@ -204,6 +204,11 @@ footer
     {
         margin-left: calc((100% - 68px)/2);
     }
+    .Bloco
+    {
+        margin-top: 75px;
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (min-width: 577px)
@@ -241,6 +246,11 @@ footer
     {
         font-size: 2em;
     }
+    .Bloco
+    {
+        margin-top: 75px;
+        margin-bottom: 0px;
+    }
 }
 
 /* Large Devices (Desktops) */
@@ -277,6 +287,12 @@ footer
     .Titulo_Bloco
     {
         font-size: 3em;
+    }
+
+    .Bloco
+    {
+        margin-top: 200px;
+        margin-bottom: 75px;
     }
 
 }
