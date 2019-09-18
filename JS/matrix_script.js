@@ -2,6 +2,14 @@ var cena = 0
 var RedPillButton = false
 var BluePillButton = false
 
+function CheckScreenWidth()
+{
+    if (window.innerWidth < 1280)
+    {
+        window.location.replace('main.html')
+    }
+}
+
 function StartVideo()
 {  
     document.getElementById('Video').addEventListener("ended", EndVideo)
