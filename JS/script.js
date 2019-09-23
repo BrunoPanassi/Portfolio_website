@@ -239,7 +239,7 @@ function OnResize()
 {
     var Footer = document.getElementsByTagName("footer")[0]
 
-    if(navigator.userAgent.toLowerCase().match(/mobile/i)) //ContactBox.offsetWidth < 1280
+    if(navigator.userAgent.toLowerCase().match(/mobile/i))
     {
         ComponenteText.style.fontSize = "2em"
         ComponenteImg.style.width = "48px"
