@@ -55,6 +55,12 @@ footer
     width:  124px;
 }
 
+#Image_Logo
+{
+    height: 79.5px;
+    width:  57.5px;
+}
+
 /* ------------ Skills ------------ */
 #Section_Skills
 {
@@ -78,17 +84,6 @@ footer
 {
     width: calc(100% - (100% - 124px));
 }
-
-#Contact_Text
-{
-    color: #1dd1a1;
-
-    font-family: 'Conv_BRI293', sans-serif; 
-    font-size: 3em;
-
-    text-align: center;
-}
-
 
 /* ------------ Classes ------------ */
 /* ------ Cabecalho ------ */
@@ -325,7 +320,7 @@ footer
 
     .Bloco
     {
-        margin-top: 200px;
+        margin-top: 100px;
         margin-bottom: 75px;
     }
 
