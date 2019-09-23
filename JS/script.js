@@ -11,7 +11,6 @@ var ComponenteText = document.createElement("H2")
 ComponenteText.innerText = "More info"
 ComponenteText.style.color = "#1dd1a1"
 ComponenteText.style.fontFamily = 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', "Arial", "sans-serif"
-ComponenteText.style.fontSize = "3em"
 ComponenteText.style.textAlign = "center"
 ComponenteText.style.opacity = "0"
 
@@ -78,10 +77,7 @@ function HoverEffect(EventoParm)
 {
     var NivelOpacidade = 99 
 
-    if (ContactBox.offsetWidth > 1280)
-    {
-        FadeOutEffect()
-    }
+    FadeOutEffect()
 
     function FadeOutEffect()
     {
@@ -243,7 +239,7 @@ function OnResize()
 {
     var Footer = document.getElementsByTagName("footer")[0]
 
-    if(ContactBox.offsetWidth < 1280)
+    if(navigator.userAgent.toLowerCase().match(/mobile/i)) //ContactBox.offsetWidth < 1280
     {
         ComponenteText.style.fontSize = "2em"
         ComponenteImg.style.width = "48px"
@@ -266,6 +262,5 @@ function OnResize()
         {
             ContactBox.removeChild(ComponenteImgLink)
         }
-
     }
 }
