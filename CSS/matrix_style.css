@@ -20,6 +20,12 @@ body
     background-color: transparent;
 }
 
+#Video::cue
+{
+    background-color: transparent;
+    text-shadow: 2px 2px #000000;
+}
+
 /*------------Classes------------*/
 .Container_Estilo
 {
@@ -33,6 +39,7 @@ body
     z-index: -1;
     width: 100%;
     height: auto;
+    outline: none;
 }
 
 /*------------Media Query------------*/

@@ -24,6 +24,7 @@ function EndVideo()
     document.getElementById('Red_Pill').disabled = false
     document.getElementById('Blue_Pill').disabled = false
     document.getElementById('Video').controls = false
+    document.getElementById('Track_Video').src = ''
 
     if (cena == 1)
     {
