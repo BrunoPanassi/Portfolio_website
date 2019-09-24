@@ -48,6 +48,7 @@ function RedPill()
 {
     document.getElementById('Video').src = 'Video/Red_Pill_Scene.mp4'
     document.getElementById('Video').muted = false
+    document.getElementById('Track_Video').src = ''
     RedPillButton = true
 }
 
@@ -55,6 +56,7 @@ function BluePill()
 {
     document.getElementById('Video').src = 'Video/Blue_Pill_Scene.mp4'
     document.getElementById('Video').muted = false
+    document.getElementById('Track_Video').src = ''
     BluePillButton = true
 }
 
