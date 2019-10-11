@@ -25,6 +25,7 @@ function EndVideo()
     document.getElementById('Blue_Pill').disabled = false
     document.getElementById('Video').controls = false
     document.getElementById('Track_Video').src = ''
+    document.getElementById('Track_Video_EN').src = ''
 
     if (cena == 1)
     {
@@ -46,17 +47,21 @@ function EndVideo()
 
 function RedPill()
 {
+    document.getElementById('Track_Video').src = ''
+    document.getElementById('Track_Video_EN').src = ''
     document.getElementById('Video').src = 'Video/Red_Pill_Scene.mp4'
     document.getElementById('Video').muted = false
-    document.getElementById('Track_Video').src = ''
+    
     RedPillButton = true
 }
 
 function BluePill()
 {
+    document.getElementById('Track_Video').src = ''
+    document.getElementById('Track_Video_EN').src = ''
     document.getElementById('Video').src = 'Video/Blue_Pill_Scene.mp4'
     document.getElementById('Video').muted = false
-    document.getElementById('Track_Video').src = ''
+
     BluePillButton = true
 }
 
