@@ -96,12 +96,20 @@ function HoverEffect(EventoParm)
         {
             if (EventoParm == 'MouseOver')
             {
-                ContactBox.removeChild(ComponenteText)
+                if(ContactBox.contains(ComponenteText))
+                {
+                    ContactBox.removeChild(ComponenteText)
+                }
+
                 ContactBox.appendChild(ComponenteImgLink)
             }
             else if (EventoParm == 'MouseOut')
             {
-                ContactBox.removeChild(ComponenteImgLink)
+                if(ContactBox.contains(ComponenteImgLink))
+                {
+                    ContactBox.removeChild(ComponenteImgLink)
+                }
+                
                 ContactBox.appendChild(ComponenteText)
             }
 
