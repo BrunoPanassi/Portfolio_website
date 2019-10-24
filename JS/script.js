@@ -62,6 +62,17 @@ function WaitToStart()
     ContactBox  = document.getElementById('Contact_Text_Box')
     ContactBox.appendChild(ComponenteText)
 
+    if(navigator.userAgent.toLowerCase().match(/mobile/i))
+    {
+        ContactBox.removeEventListener("mouseover", HoverEffect())
+        ContactBox.removeEventListener("mouseout", HoverEffect())
+    }
+    else
+    {
+        ContactBox.onmouseover = function() {HoverEffect('MouseOver')}
+        ContactBox.onmouseout  = function() {HoverEffect('MouseOut')}
+    }
+
     OnResize()
 
     TimeOut = setTimeout(TypeWriterH1, 1000)
@@ -102,14 +113,14 @@ function HoverEffect(EventoParm)
             {
                 ComponenteText.style.opacity = (NivelOpacidade/100).toString()
                 NivelOpacidade--
+                FadeOutEffect()
             }
             else if (EventoParm == 'MouseOut')
             {   
                 ComponenteImg.style.opacity = (NivelOpacidade/100).toString()
                 NivelOpacidade--
+                FadeOutEffect()
             }
-
-            FadeOutEffect()
         }
     }
 
