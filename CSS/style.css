@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /* Components */
 body
 {
@@ -17,7 +19,8 @@ footer
 {
     color: #1dd1a1;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'VT323', sans-serif;
     font-weight: bold;
 }
 
@@ -25,7 +28,8 @@ footer
 {
     color: #1dd1a1;
 
-    font-family: 'Conv_BRI293', sans-serif;
+    /* font-family: 'Conv_BRI293', sans-serif; */
+    font-family: 'VT323', sans-serif;
     font-weight: bold;
 }
 
